@@ -22,6 +22,7 @@ let fileParsed = JSON.parse(rawdata);
 //get path to app folder
 let pathToAppFolder = path.join(
 	folderOutsideScriptsToRun,
+	"vue-apps-created",
 	fileParsed.projectInformation.appName
 );
 

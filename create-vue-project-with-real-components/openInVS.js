@@ -2,13 +2,8 @@ var fs = require("fs"),
 	path = require("path");
 const { execSync } = require("child_process");
 
-//****************************************************
-//  				GET JSON FILE
-//****************************************************
-
 //get current folder
 let currentFolder = path.join(__dirname);
-
 //get one up folder path
 let folderOutsideScriptsToRun = path.join(
 	currentFolder
@@ -28,9 +23,8 @@ let pathToAppFolder = path.join(
 	fileParsed.projectInformation.appName
 );
 
-//****************************************************
-//  				EXECUTE COMMANDS
-//****************************************************
-
-//iterez peste fiecare obiect din array-ul Pages si creez paginile necesare
-execSync("cd " + pathToAppFolder + " && yarn");
+execSync(
+	"cd vue-apps-created && cd " +
+		fileParsed.projectInformation.appName +
+		" && code ."
+);

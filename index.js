@@ -21,6 +21,10 @@ console.log("am creat rutele");
 execSync(
 	"node ./create-vue-project-with-real-components/copyJsonToNewWebApp.js"
 );
+
+execSync("node ./create-vue-project-with-real-components/openInVs.js", {
+	stdio: "inherit"
+});
 console.log("am terminat");
 
 // execSync("node ./scriptsToRun/createNewApp.js");
