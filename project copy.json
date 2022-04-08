@@ -1,8 +1,8 @@
 {
 	"projectInformation": {
-		"appName": "sa-arat",
+		"appName": "demo-2",
 		"colors": {
-			"primary": "#1768AC",
+			"primary": "#9c27b0",
 			"secondary": "#FFEBA1",
 			"lightGrey": "rgb(207, 207, 207)",
 			"darkGrey": "rgb(36, 36, 36)",
@@ -18,485 +18,269 @@
 			"components": [
 				{
 					"type": "Combinations",
-					"components": [
-						{
-							"type": "Banner",
-							"props": {
-								"image": "banner.jpg",
-								"parentName": "this.$options.name",
-								"height": "full",
-								"parallax": "false",
-								"components": [
-									{
-										"type": "Title",
-										"props": {
-											"text": "Build Better Websites With Bikin",
-											"textAlign": "center"
-										}
-									},
-									{
-										"type": "SubTitle",
-										"props": {
-											"text": "We are team of talented designers making websites with Bootstrap"
-										}
-									},
-									{
-										"type": "Buttons",
-										"props": {
-											"label": "Get Started",
-											"type": "filled",
-											"color": "primary",
-											"align": "center",
-											"marginTop": 5
-										}
-									}
-								]
-							}
-						},
-						{
-							"type": "Columns",
-							"props": {
-								"color": "secondary",
-								"align": "center",
-								"text": [
-									{
-										"type": "Combinations",
-										"props": {
-											"components": [
-												{
-													"type": "Title",
-													"props": {
-														"text": "Voluptatem dignissimos provident quasi",
-														"textAlign": "center"
-													}
-												},
-												{
-													"type": "Body",
-													"props": {
-														"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit",
-														"marginBottom": 5,
-														"marginTop": 5
-													}
-												},
-												{
-													"type": "Buttons",
-													"props": {
-														"label": "About us.",
-														"type": "filled",
-														"align": "center"
-													}
-												}
-											]
-										}
-									}
-								]
-							}
-						},
-						{
-							"type": "Columns",
-							"props": {
-								"color": "secondary",
-								"align": "center",
-								"text": [
-									{
-										"type": "Combinations",
-										"props": {
-											"components": [
-												{
-													"type": "V-Icon",
-													"props": {
-														"icon": "save",
-														"size": "2x",
-														"align": "center"
-													}
-												},
-												{
-													"type": "Title",
-													"props": {
-														"text": "Corporis voluptates sit",
-														"textAlign": "center"
-													}
-												},
-												{
-													"type": "Body",
-													"props": {
-														"text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
-														"marginBottom": 5,
-														"marginTop": 2
-													}
-												},
-												{
-													"type": "V-Icon",
-													"props": {
-														"icon": "save",
-														"size": "2x",
-														"align": "center"
-													}
-												},
-												{
-													"type": "Title",
-													"props": {
-														"text": "Corporis voluptates sit",
-														"textAlign": "center"
-													}
-												},
-												{
-													"type": "Body",
-													"props": {
-														"text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
-														"marginBottom": 5,
-														"marginTop": 2
-													}
-												}
-											]
-										}
-									},
-									{
-										"type": "Combinations",
-										"props": {
-											"components": [
-												{
-													"type": "V-Icon",
-													"props": {
-														"icon": "save",
-														"size": "2x",
-														"align": "center"
-													}
-												},
-												{
-													"type": "Title",
-													"props": {
-														"text": "Corporis voluptates sit",
-														"textAlign": "center"
-													}
-												},
-												{
-													"type": "Body",
-													"props": {
-														"text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
-														"marginBottom": 5,
-														"marginTop": 2
-													}
-												},
-												{
-													"type": "V-Icon",
-													"props": {
-														"icon": "save",
-														"size": "2x",
-														"align": "center"
-													}
-												},
-												{
-													"type": "Title",
-													"props": {
-														"text": "Corporis voluptates sit",
-														"textAlign": "center"
-													}
-												},
-												{
-													"type": "Body",
-													"props": {
-														"text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
-														"marginBottom": 5,
-														"marginTop": 2
-													}
-												}
-											]
-										}
-									}
-								]
-							}
-						},
-						{
-							"type": "Combinations",
-							"props": {
-								"wrapper": true,
-								"components": [
-									{
-										"type": "Title",
-										"props": {
-											"text": "Features",
-											"textAlign": "center",
-											"marginTop": 5
-										}
-									},
-									{
-										"type": "Body",
-										"props": {
-											"text": "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.",
-											"textAlign": "center",
-											"marginTop": 5
-										}
-									}
-								]
-							}
-						},
-						{
-							"type": "Columns",
-							"props": {
-								"align": "center",
-								"text": [
-									{
-										"type": "V-Image",
-										"props": {
-											"image": "features-1.png",
-											"parentName": "Home"
-										}
-									},
-									{
-										"type": "Combinations",
-										"props": {
-											"components": [
-												{
-													"type": "Title",
-													"props": {
-														"text": "Voluptatem dignissimos provident quasi corporis voluptates sit assumenda."
-													}
-												},
-												{
-													"type": "Body",
-													"props": {
-														"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in Ullam est qui quos consequatur eos accusamus.",
-														"marginBottom": 5,
-														"marginTop": 2
-													}
-												}
-											]
-										}
-									}
-								]
-							}
-						},
-						{
-							"type": "Columns",
-							"props": {
-								"align": "center",
-								"text": [
-									{
-										"type": "Combinations",
-										"props": {
-											"components": [
-												{
-													"type": "Title",
-													"props": {
-														"text": "Voluptatem dignissimos provident quasi corporis voluptates sit assumenda."
-													}
-												},
-												{
-													"type": "Body",
-													"props": {
-														"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in Ullam est qui quos consequatur eos accusamus.",
-														"marginBottom": 5,
-														"marginTop": 2
-													}
-												}
-											]
-										}
-									},
-									{
-										"type": "V-Image",
-										"props": {
-											"image": "features-1.png",
-											"parentName": "Home"
-										}
-									}
-								]
-							}
-						},
-						{
-							"type": "Combinations",
-							"props": {
-								"color": "secondary",
-								"wrapper": true,
-								"components": [
-									{
-										"type": "Title",
-										"props": {
-											"text": "Sevices",
-											"textAlign": "center",
-											"marginTop": 5
-										}
-									},
-									{
-										"type": "Body",
-										"props": {
-											"text": "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.",
-											"textAlign": "center",
-											"marginTop": 5
-										}
-									},
-									{
-										"type": "Columns",
-										"props": {
-											"align": "center",
-											"text": [
-												{
-													"type": "Card",
-													"props": {
-														"components": [
-															{
-																"type": "Combinations",
-																"props": {
-																	"components": [
-																		{
-																			"type": "V-Icon",
-																			"props": {
-																				"icon": "save",
-																				"size": "2x",
-																				"align": "center"
+					"props": {
+						"components": [
+							{
+								"type": "Section",
+								"props": {
+									"padding": "false",
+									"components": [
+										{
+											"type": "Combinations",
+											"props": {
+												"components": [
+													{
+														"type": "Section",
+														"props": {
+															"components": [
+																{
+																	"type": "Combinations",
+																	"props": {
+																		"components": [
+																			{
+																				"type": "MainWrapper",
+																				"props": {
+																					"components": [
+																						{
+																							"type": "Combinations",
+																							"props": {
+																								"components": [
+																									{
+																										"type": "Banner",
+																										"props": {
+																											"image": "banner.jpg",
+																											"parentName": "this.$options.name",
+																											"height": "full",
+																											"parallax": "false",
+																											"components": [
+																												{
+																													"type": "Title",
+																													"props": {
+																														"text": "Build Better Websites With Bikin",
+																														"textAlign": "center",
+																														"textSize": "4xl"
+																													}
+																												},
+																												{
+																													"type": "SubTitle",
+																													"props": {
+																														"text": "We are team of talented designers making websites with Bootstrap",
+																														"textAlign": "center"
+																													}
+																												},
+																												{
+																													"type": "Buttons",
+																													"props": {
+																														"label": "Get Started",
+																														"type": "filled",
+																														"color": "primary",
+																														"align": "center",
+																														"marginTop": 5,
+																														"text": "This is a button"
+																													}
+																												}
+																											]
+																										}
+																									}
+																								]
+																							}
+																						}
+																					]
+																				}
 																			}
-																		},
-																		{
-																			"type": "SubTitle",
-																			"props": {
-																				"text": "Lorem Ipsum",
-																				"textAlign": "center"
-																			}
-																		},
-																		{
-																			"type": "Body",
-																			"props": {
-																				"text": "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi",
-																				"marginBottom": 5,
-																				"marginTop": 2,
-																				"align": "center"
-																			}
-																		}
-																	]
+																		]
+																	}
 																}
-															}
-														]
-													}
-												},
-												{
-													"type": "Card",
-													"props": {
-														"components": [
-															{
-																"type": "Combinations",
-																"props": {
-																	"components": [
-																		{
-																			"type": "V-Icon",
-																			"props": {
-																				"icon": "save",
-																				"size": "2x",
-																				"align": "center"
-																			}
-																		},
-																		{
-																			"type": "SubTitle",
-																			"props": {
-																				"text": "Lorem Ipsum",
-																				"textAlign": "center"
-																			}
-																		},
-																		{
-																			"type": "Body",
-																			"props": {
-																				"text": "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi",
-																				"marginBottom": 5,
-																				"marginTop": 2,
-																				"align": "center"
-																			}
-																		}
-																	]
+															]
+														}
+													},
+													{
+														"type": "Combinations",
+														"props": {
+															"components": [
+																{
+																	"type": "Title",
+																	"props": {
+																		"text": "Voluptatem dignissimos provident quasi",
+																		"textAlign": "center",
+																		"marginTop": 12
+																	}
+																},
+																{
+																	"type": "Body",
+																	"props": {
+																		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit",
+																		"marginBottom": 5,
+																		"marginTop": 5,
+																		"align": "center"
+																	}
+																},
+																{
+																	"type": "Buttons",
+																	"props": {
+																		"text": "About us.",
+																		"type": "filled",
+																		"align": "center"
+																	}
 																}
-															}
-														]
+															]
+														}
+													},
+													{
+														"type": "Combinations",
+														"props": {
+															"components": [
+																{
+																	"type": "Section",
+																	"props": {
+																		"components": [
+																			{
+																				"type": "Combinations",
+																				"props": {
+																					"components": [
+																						{
+																							"type": "MainWrapper",
+																							"props": {
+																								"components": [
+																									{
+																										"type": "Combinations",
+																										"props": {
+																											"components": [
+																												{
+																													"type": "Columns",
+																													"props": {
+																														"color": "secondary",
+																														"align": "center",
+																														"marginTop": 12,
+																														"template": [
+																															{
+																																"name": "#first",
+																																"components": [
+																																	{
+																																		"type": "V-Icon",
+																																		"props": {
+																																			"icon": "save",
+																																			"size": "2x",
+																																			"align": "center"
+																																		}
+																																	},
+																																	{
+																																		"type": "Title",
+																																		"props": {
+																																			"text": "Corporis voluptates sit",
+																																			"textAlign": "center"
+																																		}
+																																	},
+																																	{
+																																		"type": "Body",
+																																		"props": {
+																																			"text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
+																																			"marginBottom": 5,
+																																			"marginTop": 2
+																																		}
+																																	},
+																																	{
+																																		"type": "V-Icon",
+																																		"props": {
+																																			"icon": "save",
+																																			"size": "2x",
+																																			"align": "center"
+																																		}
+																																	},
+																																	{
+																																		"type": "Title",
+																																		"props": {
+																																			"text": "Corporis voluptates sit",
+																																			"textAlign": "center"
+																																		}
+																																	},
+																																	{
+																																		"type": "Body",
+																																		"props": {
+																																			"text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
+																																			"marginBottom": 5,
+																																			"marginTop": 2
+																																		}
+																																	}
+																																]
+																															},
+																															{
+																																"name": "#second",
+																																"components": [
+																																	{
+																																		"type": "V-Icon",
+																																		"props": {
+																																			"icon": "save",
+																																			"size": "2x",
+																																			"align": "center"
+																																		}
+																																	},
+																																	{
+																																		"type": "Title",
+																																		"props": {
+																																			"text": "Corporis voluptates sit",
+																																			"textAlign": "center"
+																																		}
+																																	},
+																																	{
+																																		"type": "Body",
+																																		"props": {
+																																			"text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
+																																			"marginBottom": 5,
+																																			"marginTop": 2
+																																		}
+																																	},
+																																	{
+																																		"type": "V-Icon",
+																																		"props": {
+																																			"icon": "save",
+																																			"size": "2x",
+																																			"align": "center"
+																																		}
+																																	},
+																																	{
+																																		"type": "Title",
+																																		"props": {
+																																			"text": "Corporis voluptates sit",
+																																			"textAlign": "center"
+																																		}
+																																	},
+																																	{
+																																		"type": "Body",
+																																		"props": {
+																																			"text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
+																																			"marginBottom": 5,
+																																			"marginTop": 2
+																																		}
+																																	}
+																																]
+																															}
+																														]
+																													}
+																												}
+																											]
+																										}
+																									}
+																								]
+																							}
+																						}
+																					]
+																				}
+																			}
+																		]
+																	}
+																}
+															]
+														}
 													}
-												}
-											]
+												]
+											}
 										}
-									},
-									{
-										"type": "Columns",
-										"props": {
-											"align": "center",
-											"text": [
-												{
-													"type": "Card",
-													"props": {
-														"components": [
-															{
-																"type": "Combinations",
-																"props": {
-																	"components": [
-																		{
-																			"type": "V-Icon",
-																			"props": {
-																				"icon": "save",
-																				"size": "2x",
-																				"align": "center"
-																			}
-																		},
-																		{
-																			"type": "SubTitle",
-																			"props": {
-																				"text": "Lorem Ipsum",
-																				"textAlign": "center"
-																			}
-																		},
-																		{
-																			"type": "Body",
-																			"props": {
-																				"text": "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi",
-																				"marginBottom": 5,
-																				"marginTop": 2,
-																				"align": "center"
-																			}
-																		}
-																	]
-																}
-															}
-														]
-													}
-												},
-												{
-													"type": "Card",
-													"props": {
-														"components": [
-															{
-																"type": "Combinations",
-																"props": {
-																	"components": [
-																		{
-																			"type": "V-Icon",
-																			"props": {
-																				"icon": "save",
-																				"size": "2x",
-																				"align": "center"
-																			}
-																		},
-																		{
-																			"type": "SubTitle",
-																			"props": {
-																				"text": "Lorem Ipsum",
-																				"textAlign": "center"
-																			}
-																		},
-																		{
-																			"type": "Body",
-																			"props": {
-																				"text": "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi",
-																				"marginBottom": 5,
-																				"marginTop": 2,
-																				"align": "center"
-																			}
-																		}
-																	]
-																}
-															}
-														]
-													}
-												}
-											]
-										}
-									}
-								]
+									]
+								}
 							}
-						}
-					]
+						]
+					}
 				}
 			]
 		}

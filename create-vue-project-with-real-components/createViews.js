@@ -46,11 +46,7 @@ pagesKeys.forEach((key) => {
 
 	let slot = [];
 
-	const writeAllComponentsToTemplate = (components, depth) => {
-		// console.log(components);
-		if (depth == 1) {
-			slot.push("<div>");
-		}
+	const writeAllComponentsToTemplate = (components) => {
 		components.forEach((component, index) => {
 			if (
 				component.hasOwnProperty("type") &&
@@ -65,8 +61,10 @@ pagesKeys.forEach((key) => {
 					keys.push("components");
 				}
 				for (let i = 0; i < keys.length; i++) {
-					if (keys[i] !== "components") {
+					if (keys[i] !== "components" && keys[i] !== "template") {
 						if (typeof component.props[keys[i]] == "number") {
+							console.log(keys, component.props.text);
+
 							slot.push(":" + keys[i] + "='" + component.props[keys[i]] + "'");
 						} else if (
 							component.props[keys[i]] == "false" ||
@@ -81,10 +79,21 @@ pagesKeys.forEach((key) => {
 						if (component.type !== "Combinations") {
 							slot.push(">");
 						}
-						console.log("components", component.props[keys[i]]);
-						writeAllComponentsToTemplate(component.props[keys[i]], depth + 1);
+
+						writeAllComponentsToTemplate(component.props[keys[i]]);
+					} else if (keys[i] == "template" && i == keys.length - 1) {
+						slot.push(">");
+						component.props[keys[i]].forEach((templ) => {
+							slot.push("<template " + templ.name + ">");
+							writeAllComponentsToTemplate(templ.components);
+							slot.push("</template>");
+						});
 					}
-					if (!keys.includes("components") && i == keys.length - 1) {
+					if (
+						!keys.includes("components") &&
+						i == keys.length - 1 &&
+						!keys.includes("template")
+					) {
 						slot.push(">");
 					}
 				}
@@ -98,11 +107,8 @@ pagesKeys.forEach((key) => {
 				slot.push("</" + component.type + ">");
 			}
 		});
-		if (depth == 1) {
-			slot.push("</div>");
-		}
 	};
-	writeAllComponentsToTemplate(fileParsed.pages[key].components, 1);
+	writeAllComponentsToTemplate(fileParsed.pages[key].components);
 	let writeTemplate = "<template>" + slot.join(" ") + "</template>";
 	let writeScript =
 		"<script>export default{name:'" +

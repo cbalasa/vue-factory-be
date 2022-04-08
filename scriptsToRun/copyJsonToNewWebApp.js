@@ -1,7 +1,5 @@
 var fs = require("fs"),
 	path = require("path");
-const { execSync } = require("child_process");
-
 //****************************************************
 //  				GET JSON FILE
 //****************************************************
@@ -32,8 +30,11 @@ let pathToAppFolder = path.join(
 //****************************************************
 
 //iterez peste fiecare obiect din array-ul Pages si creez paginile necesare
-execSync(
-	"cd vue-apps-created && git clone git@github.com:cbalasa/vue-template.git " +
-		fileParsed.projectInformation.appName,
-	{ stdio: "inherit" }
+let pathToDataFolder = path.join(pathToAppFolder, "src", "data");
+if (!fs.existsSync(pathToDataFolder)) {
+	fs.mkdirSync(pathToDataFolder);
+}
+fs.copyFileSync(
+	path.join(folderOutsideScriptsToRun, "/project.json"),
+	path.join(pathToDataFolder, "/project.json")
 );

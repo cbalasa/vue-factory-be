@@ -1,7 +1,5 @@
 var fs = require("fs"),
 	path = require("path");
-const { execSync } = require("child_process");
-
 //****************************************************
 //  				GET JSON FILE
 //****************************************************
@@ -32,8 +30,26 @@ let pathToAppFolder = path.join(
 //****************************************************
 
 //iterez peste fiecare obiect din array-ul Pages si creez paginile necesare
-execSync(
-	"cd vue-apps-created && git clone git@github.com:cbalasa/vue-template.git " +
-		fileParsed.projectInformation.appName,
-	{ stdio: "inherit" }
-);
+let pagesKeys = Object.keys(fileParsed.pages);
+pagesKeys.forEach((key) => {
+	//trebuie sa creez de la zero pagina de vueJs in baza a ceea ce gasesc in json
+	let writeTemplate =
+		'<template><Combinations  :components="$projectJSON.pages[$options.name.toLowerCase()].content[0].components"/></template>';
+
+	let writeScript =
+		"<script>export default{name:'" +
+		fileParsed.pages[key].title +
+		"'}</script>";
+
+	let writeToPage = writeTemplate.concat(writeScript);
+	if (!fs.existsSync(path.join(pathToAppFolder, "src", "views"))) {
+		fs.mkdirSync(path.join(pathToAppFolder, "src", "views"));
+	}
+	fs.writeFileSync(
+		path.join(pathToAppFolder, "src", "views") +
+			"\\" +
+			fileParsed.pages[key].title +
+			".vue",
+		writeToPage
+	);
+});

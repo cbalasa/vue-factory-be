@@ -33,4 +33,4 @@ let pathToAppFolder = path.join(
 //****************************************************
 
 //iterez peste fiecare obiect din array-ul Pages si creez paginile necesare
-execSync("cd " + pathToAppFolder + " && yarn");
+execSync("cd " + pathToAppFolder + " && yarn", { stdio: "inherit" });

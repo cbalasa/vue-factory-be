@@ -23,8 +23,17 @@ let pathToAppFolder = path.join(
 	fileParsed.projectInformation.appName
 );
 
+// execSync(" start  http://localhost:8080/about", { stdio: "inherit" });
+
+// execSync(
+// 	"cd vue-apps-created && cd " +
+// 		fileParsed.projectInformation.appName +
+// 		"  && npm run serve ",
+// 	{ stdio: "inherit" }
+// );
 execSync(
 	"cd vue-apps-created && cd " +
 		fileParsed.projectInformation.appName +
-		" && code ."
+		"  && code .",
+	{ stdio: "inherit" }
 );

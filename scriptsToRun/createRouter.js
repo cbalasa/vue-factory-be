@@ -1,7 +1,5 @@
 var fs = require("fs"),
 	path = require("path");
-const { execSync } = require("child_process");
-
 //****************************************************
 //  				GET JSON FILE
 //****************************************************
@@ -32,8 +30,29 @@ let pathToAppFolder = path.join(
 //****************************************************
 
 //iterez peste fiecare obiect din array-ul Pages si creez paginile necesare
-execSync(
-	"cd vue-apps-created && git clone git@github.com:cbalasa/vue-template.git " +
-		fileParsed.projectInformation.appName,
-	{ stdio: "inherit" }
+let pagesKeys = Object.keys(fileParsed.pages);
+let routes = [];
+pagesKeys.forEach((key) => {
+	let route = {};
+	route.path = key !== "home" ? "/" + key : "/";
+	route.name = key.charAt(0).toUpperCase() + key.substr(1).toLowerCase();
+	route.component = key;
+	routes.push(route);
+});
+let writeRoutes = "const routes=" + JSON.stringify(routes) + ";";
+
+let writeIntro =
+	"import Vue from 'vue';import VueRouter from 'vue-router';Vue.use(VueRouter);";
+
+let writeOutro =
+	"const router = new VueRouter({mode: 'history',base: process.env.BASE_URL,routes});export default router";
+
+let writeToPage = writeIntro.concat(writeRoutes).concat(writeOutro);
+
+if (!fs.existsSync(path.join(pathToAppFolder, "src", "router"))) {
+	fs.mkdirSync(path.join(pathToAppFolder, "src", "router"));
+}
+fs.writeFileSync(
+	path.join(pathToAppFolder, "src", "router", "index.js"),
+	writeToPage
 );

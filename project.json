@@ -21,69 +21,334 @@
 					"props": {
 						"components": [
 							{
-								"type": "Banner",
+								"type": "Section",
 								"props": {
-									"image": "banner.jpg",
-									"parentName": "this.$options.name",
-									"height": "full",
-									"parallax": "false",
+									"padding": "false",
 									"components": [
 										{
-											"type": "Title",
+											"type": "Combinations",
 											"props": {
-												"text": "Build Better Websites With Bikin",
-												"textAlign": "center",
-												"textSize": "4xl"
+												"components": [
+													{
+														"type": "Section",
+														"props": {
+															"colorBackground": "lightGrey",
+															"height": 90,
+															"components": [
+																{
+																	"type": "Combinations",
+																	"props": {
+																		"components": [
+																			{
+																				"type": "MainWrapper",
+																				"props": {
+																					"components": [
+																						{
+																							"type": "Combinations",
+																							"props": {
+																								"components": [
+																									{
+																										"type": "Banner",
+																										"props": {
+																											"image": "banner.svg",
+																											"parentName": "$options.name",
+																											"components": [
+																												{
+																													"type": "Combinations",
+																													"props": {
+																														"components": [
+																															{
+																																"type": "Title",
+																																"props": {
+																																	"text": "Build Better Websites With Bikin",
+																																	"textAlign": "center",
+																																	"textSize": "6xl",
+																																	"fontWeight": "black"
+																																}
+																															},
+																															{
+																																"type": "SubTitle",
+																																"props": {
+																																	"text": "Infermedica makes it easier to pre-diagnose, triage, and direct your patients to appropriate medical services.",
+																																	"fontWeight": "normal",
+																																	"textSize": "2xl",
+																																	"textAlign": "center"
+																																}
+																															},
+																															{
+																																"type": "Buttons",
+																																"props": {
+																																	"text": "Get Started",
+																																	"type": "filled",
+																																	"color": "primary",
+																																	"align": "center",
+																																	"marginTop": 5,
+																																	"size": "medium"
+																																}
+																															}
+																														]
+																													}
+																												}
+																											]
+																										}
+																									}
+																								]
+																							}
+																						}
+																					]
+																				}
+																			}
+																		]
+																	}
+																}
+															]
+														}
+													}
+												]
 											}
 										},
 										{
-											"type": "SubTitle",
+											"type": "Section",
 											"props": {
-												"text": "We are team of talented designers making websites with Bootstrap",
-												"textAlign": "center"
+												"components": [
+													{
+														"type": "Combinations",
+														"props": {
+															"components": [
+																{
+																	"type": "MainWrapper",
+																	"props": {
+																		"components": [
+																			{
+																				"type": "Combinations",
+																				"props": {
+																					"components": [
+																						{
+																							"type": "Banner",
+																							"props": {
+																								"image": "banner.jpg",
+																								"parentName": "this.$options.name",
+																								"height": "full",
+																								"parallax": "false",
+																								"components": [
+																									{
+																										"type": "Title",
+																										"props": {
+																											"text": "Build Better Websites With Bikin",
+																											"textAlign": "center",
+																											"textSize": "4xl"
+																										}
+																									},
+																									{
+																										"type": "SubTitle",
+																										"props": {
+																											"text": "We are team of talented designers making websites with Bootstrap",
+																											"textAlign": "center"
+																										}
+																									},
+																									{
+																										"type": "Buttons",
+																										"props": {
+																											"label": "Get Started",
+																											"type": "filled",
+																											"color": "primary",
+																											"align": "center",
+																											"marginTop": 5,
+																											"text": "This is a button"
+																										}
+																									}
+																								]
+																							}
+																						}
+																					]
+																				}
+																			}
+																		]
+																	}
+																}
+															]
+														}
+													}
+												]
 											}
 										},
 										{
-											"type": "Buttons",
+											"type": "Combinations",
 											"props": {
-												"label": "Get Started",
-												"type": "filled",
-												"color": "primary",
-												"align": "center",
-												"marginTop": 5,
-												"text": "This is a button"
-											}
-										}
-									]
-								}
-							},
-							{
-								"type": "Combinations",
-								"props": {
-									"components": [
-										{
-											"type": "Title",
-											"props": {
-												"text": "Voluptatem dignissimos provident quasi",
-												"textAlign": "center",
-												"marginTop": "12"
-											}
-										},
-										{
-											"type": "Body",
-											"props": {
-												"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit",
-												"marginBottom": 5,
-												"marginTop": 5,
-												"align": "center"
+												"components": [
+													{
+														"type": "Title",
+														"props": {
+															"text": "Voluptatem dignissimos provident quasi",
+															"textAlign": "center",
+															"marginTop": 12
+														}
+													},
+													{
+														"type": "Body",
+														"props": {
+															"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit",
+															"marginBottom": 5,
+															"marginTop": 5,
+															"align": "center"
+														}
+													},
+													{
+														"type": "Buttons",
+														"props": {
+															"text": "About us.",
+															"type": "filled",
+															"align": "center"
+														}
+													}
+												]
 											}
 										},
 										{
-											"type": "Buttons",
+											"type": "Combinations",
 											"props": {
-												"text": "About us.",
-												"type": "filled",
-												"align": "center"
+												"components": [
+													{
+														"type": "Section",
+														"props": {
+															"components": [
+																{
+																	"type": "Combinations",
+																	"props": {
+																		"components": [
+																			{
+																				"type": "MainWrapper",
+																				"props": {
+																					"components": [
+																						{
+																							"type": "Combinations",
+																							"props": {
+																								"components": [
+																									{
+																										"type": "Columns",
+																										"props": {
+																											"color": "secondary",
+																											"align": "center",
+																											"marginTop": 12,
+																											"template": [
+																												{
+																													"name": "#first",
+																													"components": [
+																														{
+																															"type": "V-Icon",
+																															"props": {
+																																"icon": "save",
+																																"size": "2x",
+																																"align": "center"
+																															}
+																														},
+																														{
+																															"type": "Title",
+																															"props": {
+																																"text": "Corporis voluptates sit",
+																																"textAlign": "center"
+																															}
+																														},
+																														{
+																															"type": "Body",
+																															"props": {
+																																"text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
+																																"marginBottom": 5,
+																																"marginTop": 2
+																															}
+																														},
+																														{
+																															"type": "V-Icon",
+																															"props": {
+																																"icon": "save",
+																																"size": "2x",
+																																"align": "center"
+																															}
+																														},
+																														{
+																															"type": "Title",
+																															"props": {
+																																"text": "Corporis voluptates sit",
+																																"textAlign": "center"
+																															}
+																														},
+																														{
+																															"type": "Body",
+																															"props": {
+																																"text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
+																																"marginBottom": 5,
+																																"marginTop": 2
+																															}
+																														}
+																													]
+																												},
+																												{
+																													"name": "#second",
+																													"components": [
+																														{
+																															"type": "V-Icon",
+																															"props": {
+																																"icon": "save",
+																																"size": "2x",
+																																"align": "center"
+																															}
+																														},
+																														{
+																															"type": "Title",
+																															"props": {
+																																"text": "Corporis voluptates sit",
+																																"textAlign": "center"
+																															}
+																														},
+																														{
+																															"type": "Body",
+																															"props": {
+																																"text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
+																																"marginBottom": 5,
+																																"marginTop": 2
+																															}
+																														},
+																														{
+																															"type": "V-Icon",
+																															"props": {
+																																"icon": "save",
+																																"size": "2x",
+																																"align": "center"
+																															}
+																														},
+																														{
+																															"type": "Title",
+																															"props": {
+																																"text": "Corporis voluptates sit",
+																																"textAlign": "center"
+																															}
+																														},
+																														{
+																															"type": "Body",
+																															"props": {
+																																"text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
+																																"marginBottom": 5,
+																																"marginTop": 2
+																															}
+																														}
+																													]
+																												}
+																											]
+																										}
+																									}
+																								]
+																							}
+																						}
+																					]
+																				}
+																			}
+																		]
+																	}
+																}
+															]
+														}
+													}
+												]
 											}
 										}
 									]

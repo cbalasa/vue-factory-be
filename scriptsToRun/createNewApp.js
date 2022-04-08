@@ -33,7 +33,6 @@ let pathToAppFolder = path.join(
 
 //iterez peste fiecare obiect din array-ul Pages si creez paginile necesare
 execSync(
-	"cd vue-apps-created && git clone git@github.com:cbalasa/vue-template.git " +
-		fileParsed.projectInformation.appName,
-	{ stdio: "inherit" }
+	"git clone git@github.com:cbalasa/vue-template.git " +
+		fileParsed.projectInformation.appName
 );
