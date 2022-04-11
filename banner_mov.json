@@ -1,0 +1,108 @@
+{
+	"projectInformation": {
+		"appName": "demo-purple-banner",
+		"colors": {
+			"primary": "#ce72a5",
+			"secondary": "#452d6c",
+			"lightGrey": "rgb(207, 207, 207)",
+			"darkGrey": "rgb(36, 36, 36)",
+			"info": "#00bcd4",
+			"success": "#4caf50",
+			"warning": "#ff9800",
+			"danger": "#f44336"
+		}
+	},
+	"pages": {
+		"about": {
+			"title": "About",
+			"components": [
+				{
+					"type": "Combinations",
+					"props": {
+						"components": [
+							{
+								"type": "Section",
+								"props": {
+									"padding": "false",
+									"components": [
+										{
+											"type": "Combinations",
+											"props": {
+												"components": [
+													{
+														"type": "Section",
+														"props": {
+															"padding": "false",
+															"components": [
+																{
+																	"type": "Combinations",
+																	"props": {
+																		"components": [
+																			{
+																				"type": "Banner",
+																				"props": {
+																					"image": "banner_orange.jpg",
+																					"parentName": "about",
+																					"cover": "true",
+																					"height": "full",
+																					"components": [
+																						{
+																							"type": "Combinations",
+																							"props": {
+																								"components": [
+																									{
+																										"type": "Title",
+																										"props": {
+																											"text": "Build Better Websites With Bikin",
+																											"textAlign": "center",
+																											"textSize": "6xl",
+																											"fontWeight": "black",
+																											"color": "secondary"
+																										}
+																									},
+																									{
+																										"type": "SubTitle",
+																										"props": {
+																											"text": "Infermedica makes it easier to pre-diagnose, triage, and direct your patients to appropriate medical services.",
+																											"fontWeight": "normal",
+																											"textSize": "2xl",
+																											"textAlign": "center",
+																											"color": "secondary"
+																										}
+																									},
+																									{
+																										"type": "Buttons",
+																										"props": {
+																											"text": "Get Started",
+																											"type": "filled",
+																											"color": "secondary",
+																											"align": "center",
+																											"marginTop": 5,
+																											"size": "medium"
+																										}
+																									}
+																								]
+																							}
+																						}
+																					]
+																				}
+																			}
+																		]
+																	}
+																}
+															]
+														}
+													}
+												]
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}

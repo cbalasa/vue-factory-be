@@ -1,9 +1,9 @@
 {
 	"projectInformation": {
-		"appName": "demo-2",
+		"appName": "demo",
 		"colors": {
-			"primary": "#9c27b0",
-			"secondary": "#FFEBA1",
+			"primary": "#164798",
+			"secondary": "#5c9fff",
 			"lightGrey": "rgb(207, 207, 207)",
 			"darkGrey": "rgb(36, 36, 36)",
 			"info": "#00bcd4",
@@ -63,7 +63,8 @@
 																																	"text": "Build Better Websites With Bikin",
 																																	"textAlign": "center",
 																																	"textSize": "6xl",
-																																	"fontWeight": "black"
+																																	"fontWeight": "black",
+																																	"color": "primary"
 																																}
 																															},
 																															{
@@ -72,7 +73,8 @@
 																																	"text": "Infermedica makes it easier to pre-diagnose, triage, and direct your patients to appropriate medical services.",
 																																	"fontWeight": "normal",
 																																	"textSize": "2xl",
-																																	"textAlign": "center"
+																																	"textAlign": "center",
+																																	"color": "secondary"
 																																}
 																															},
 																															{

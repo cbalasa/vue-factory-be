@@ -40,4 +40,4 @@ const recursiveModules = (folder) => {
 
 recursiveModules(componentsFolder);
 
-console.log(components);
+// console.log(components);
